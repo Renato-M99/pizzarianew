@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    background-image: url(../_imagens/secao08-background-capa.jpg);
+    /*faz com que a imagem preencha toda a área onde ela foi inserida, fazendo com que a mesma aumente seu tamanho o máximo que conseguir sem dar zoom.*/
+    background-size: cover;
+    /*permite alinhar a imagem tanto no eixo x quanto no eixo y*/
+    background-position: center center;
+    width: 100%;
+    /*representa uma fração da altura do elemento onde foi usado, por exemplo: em uma div com a altura de 900px 1vh representaria 9px*/
+    height: 100vh;
+    border-top: 5px solid #078C31;
+
+    /*explicação na próxima aula*/
+    clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
+}
+
+nav {
+    width: 95%;
+    height: 150px;
+    position: fixed;
+    top: 0;
+    left: 2.5%;
+    /*permite posicionar o conteúdo em cima do outro, até 9999*/
+    z-index: 9999;
+}
+
+nav ul {
+    display: flex;
+    /*forma curta de se colocar o flex-direction e também o flex-wrap*/
+    flex-flow: row wrap;
+    justify-content: left;
+    margin-top: 70px;
+    list-style: none;
+}
+
+/*uma forma mais especifica de chamar uma classe, também pode usar usada no ID com #. Ex: nav ul#esquerda*/
+nav ul.esquerda {
+    position: fixed;
+    left: 30px;
+    top: 0;
+}
+
+nav ul.direita {
+    position: fixed;
+    right: 30px;
+    top: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-size: 80%;
+}
+
+nav ul li.criar-conta {
+    border: 1px solid #fff;
+    padding: 9px 29px;
+}
+
+nav ul li a:hover {
+    background-color: #F2B705;
+    transition-duration: 0.8s;
+}
+
+nav ion-icon {
+    width: 45px;
+    height: 45px;
+    color: white;
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+nav ion-icon:hover {
+    color: #F2B705;
+    cursor: pointer;
+    transition-duration: 0.8s;
+}
+
+header div.chamada {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 50%;
+    left: auto;
+    /*transform: translate(-50%, -50%);*/
+    text-align: center;
+}
+
+section {
+    padding: 55px 0 80px;
+}
+
+section.domingo-perfeito {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+div.domingo-perfeito-esquerda,
+div.domingo-perfeito-direita {
+    position: relative;
+    width: 15%;
+}
+
+div.folha1 {
+    position: absolute;
+    top: 40px;
+    left: 40px;     
+    width: 150px;
+    height: 150px;
+    background-image: url(../_imagens/secao09-folha1.png);
+    background-repeat: no-repeat;
+}
+
+div.camarao {
+    position: absolute;
+    top: 250px;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background: url(../_imagens/secao09-camarao.jpg) no-repeat;
+}
+
+div.folha2 {
+    position: absolute;
+    top: 500px;
+    left: 50px;
+    width: 150px;
+    height: 150px;
+    background: url(../_imagens/secao09-folha2.png) no-repeat;
+}
+
+div.folha3 {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    width: 160px;
+    height: 150px;
+    background: url(../_imagens/secao09-folha3.png) no-repeat;
+}
+
+div.tomate {
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    width: 160px;
+    height: 150px;
+    background: url(../_imagens/secao09-tomate.png) no-repeat;
+}
+
+div.queijo {
+    position: absolute;
+    top: 600px;
+    left: 10px;
+    width: 160px;
+    height: 150px;
+    background: url(../_imagens/secao09-queijo.jpg) no-repeat;
+}
+
+div.domingo-perfeito-centro {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+}
+
+div.pontos-chaves-mestre {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+div.pontos-chaves {
+    text-align: center;
+    width: 25%;
+}
+
+section.domingo-perfeito div.pontos-chaves ion-icon {
+    width: 75px;
+    height: 75px;
+    color: #f03733;
+}
+
+/*-----------------------------------*/
+
+/*---------- SEÇAO - PIZZA ----------*/
+
+/*-----------------------------------*/
+
+section.pizza {
+    background-image: linear-gradient( rgba(0,0,0, 0.7), rgba(0,0,0, 0.4)), url(../_imagens/secao10-background-secao-pizza.jpg);
+    /*Vai tentar aumentar o tamanho da imagem sem dar zoom ou cortar pra preencher o espaço determinado*/
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /*Como estamos usando o Column inves do row, o justify vai ler em coluna de cima para baixo*/
+    justify-content: flex-start;
+    align-items: center;
+    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+}
+
+div.pizza-opcoes-mestre {
+    width: 80%;
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+div.pizza-opcoes {
+    width: 33.3%;
+    text-align: center;
+    margin: 5px 0;
+}
+
