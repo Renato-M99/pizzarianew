@@ -263,3 +263,44 @@ div.testemunha-mestre ion-icon{
 div.testemunha-esquerda ion-icon{
     opacity: 0.5;
 }
+
+div.testemunha-centro{
+    width: 70%;
+    margin: 0 auto;
+    
+    height: 300px;
+    position: relative;
+    max-width: 1010px;
+    overflow: hidden;
+    
+}
+
+div.testemunhos{
+    position: absolute;
+    left: 0;
+    width: 2680px;
+}
+
+section.testemunha div.testemunha-centro div.testemunhos ul{
+    display: inline-table;
+    width: 300px;
+    background: #FFF;
+    padding: 30px;
+
+    margin: 50px 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    list-style: none;
+}
+
+
+/* Seção - Transição 1 */
+div.transicao-testemunha-plano{
+    width: 100%;
+    height: 280px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
