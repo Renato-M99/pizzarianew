@@ -1,0 +1,93 @@
+/* tipografia */
+p.destaque, section.pizzza p.destaque, section.testemunha p.destaque{
+    width: 80%;
+}
+
+/* HEADER */
+nav{
+    width: 100%;
+    left:0;
+    padding-right: 10px;
+   
+}
+
+nav div{
+    width: 150px;
+    height: 130px;
+    background-position: center bottom;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    padding: 10px;
+}
+
+/* SECTION Domingo perfeito */
+div.domingo-perfeito-esquerda, div.domingo-perfeito-direita{
+    /* retira o elemento do fluxo da página. */
+    display: none;
+}
+
+div.domingo-perfeito-centro {
+    width: 95%;
+}
+
+/* SECTION pizza */
+div.pizza-opcoes-mestre{
+    width: 95%;
+}
+
+/* testemunhos */
+div.testemunha-centro{
+    width: 680px;
+}
+
+div.testemunha-esquerda, div.testemunha-direita{
+    display: none;
+}
+
+/* transição */
+div.transicao-testemunha-plano{
+    display: none;
+}
+
+/* planos */
+div.planos-janela{
+    width: 100%;
+}
+
+div.planos{
+    margin: 80px 5px;
+}
+
+@media screen and (max-width:940px){
+    div.planos{
+        width: 220px;
+    }
+}
+
+@media screen and (max-width:768px){
+    div.planos p{
+        font-size: 18px;
+    }
+}
+
+/* FOOTER */
+
+footer div.mapa, footer div.info{
+    width: 45%;
+}
+
+footer div.info{
+    margin-right: 35px;
+}
+
+footer div.redes-sociais ion-icon{
+    width:10%;
+}
+
+footer div.pizza-rodape-decoracao{
+    display: none;
+}
+
