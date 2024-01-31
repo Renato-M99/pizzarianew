@@ -93,7 +93,7 @@ header div.chamada a {
     background: linear-gradient(rgba(7, 140, 49, 55) 0%, rgba(6, 89, 2, 35) 50%, rgba(6, 89, 2, 35) 100%);
    
     animation-name: HeaderA-moverParaCima;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
     animation-delay: 1s;
     animation-timing-function: ease-out;
     animation-fill-mode: backwards;
